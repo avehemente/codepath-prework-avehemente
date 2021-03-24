@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Simon Says!</h1>
+    <h2>by Aiden Vehemente</h2>
+    <p>
+      Welcome to Simon! Repeat the order of the colors by clicking the buttons. You have 10 seconds to respond to each clue. Pick the number of buttons below to start. Have fun!
+    </p>
+    
+    <p id="timer">
+      <b>Timer:</b>
+    </p>
+    
+    <button id="startBtn3" onclick="startGame(3)">3 buttons</button>
+    <button id="startBtn4" onclick="startGame(4)">4 buttons</button>
+    <button id="startBtn5" onclick="startGame(5)">5 buttons</button>
+    <button id="startBtn6" onclick="startGame(6)">6 buttons</button>
+    
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
+      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
+      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
+      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"> </button>
+      <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)"> </button>
+      <button id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)"> </button>
+    </div>
+    
+  </body>
+</html>
